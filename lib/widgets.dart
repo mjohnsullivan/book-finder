@@ -16,7 +16,7 @@ class BookFinderPage extends StatelessWidget {
         leading: Icon(Icons.book),
       ),
       body: FutureBuilder(
-          future: fetchBooks(bhagatUrl),
+          future: fetchCachedBooks(bhagatUrl),
           builder: (context, AsyncSnapshot<List<Book>> snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
               if (snapshot.hasError) {
@@ -41,7 +41,8 @@ class BookTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        backgroundImage: NetworkImage(book.thumbnailUrl),
+        backgroundImage:
+            book.thumbnailUrl != null ? NetworkImage(book.thumbnailUrl) : null,
       ),
       title: Text(book.title),
       subtitle: Text(book.author),
