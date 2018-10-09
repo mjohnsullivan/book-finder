@@ -1,5 +1,8 @@
-import 'package:book_finder/books_api.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import 'package:book_finder/cache.dart';
+import 'package:book_finder/books_api.dart';
 
 const potterUrl =
     'https://www.googleapis.com/books/v1/volumes?q=harry+potter+inauthor:rowling';
@@ -16,7 +19,7 @@ class BookFinderPage extends StatelessWidget {
         leading: Icon(Icons.book),
       ),
       body: FutureBuilder(
-          future: fetchCachedBooks(bhagatUrl),
+          future: fetchCachedBooks(potterUrl),
           builder: (context, AsyncSnapshot<List<Book>> snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
               if (snapshot.hasError) {
@@ -44,9 +47,15 @@ class BookTile extends StatelessWidget {
         backgroundImage:
             book.thumbnailUrl != null ? NetworkImage(book.thumbnailUrl) : null,
       ),
-      title: Text(book.title),
-      subtitle: Text(book.author),
+      title: Text(book.title, maxLines: 2, overflow: TextOverflow.ellipsis),
+      subtitle: Text(book.author, overflow: TextOverflow.ellipsis),
       onTap: () => _navigateToDetailsPage(book, context),
+      trailing: IconButton(
+        icon: Icon(Icons.book),
+        onPressed: () => book.googleUrl != null
+            ? _navigateToUrl(book.googleUrl, context)
+            : null,
+      ),
     );
   }
 }
@@ -55,6 +64,16 @@ void _navigateToDetailsPage(Book book, BuildContext context) {
   Navigator.of(context).push(MaterialPageRoute(
     builder: (context) => BookDetailsPage(book),
   ));
+}
+
+void _navigateToUrl(String url, BuildContext context) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    Scaffold.of(context).showSnackBar(SnackBar(
+      content: Text('Unable to Launch URL'),
+    ));
+  }
 }
 
 class BookDetailsPage extends StatelessWidget {

@@ -1,0 +1,756 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 54,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "AsNSz-1gUcMC",
+            "etag": "nau1fDravtw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/AsNSz-1gUcMC",
+            "volumeInfo": {
+                "title": "2 States",
+                "subtitle": "The Story of My Marriage",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Sandesh S",
+                "publishedDate": "2009",
+                "description": "Fourth book by the bestselling author Chetan Bhagat. 2 States is a story about Krish and Ananya. They are from two different states of India, deeply in love and want to get married. Of course, their parents don't agree. To convert their love story into a love marriage, the couple have a tough battle in front of them.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129115300"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129115301"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 269,
+                "printType": "BOOK",
+                "categories": [
+                    "Indic fiction (English)"
+                ],
+                "averageRating": 4.0,
+                "ratingsCount": 58,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=AsNSz-1gUcMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=AsNSz-1gUcMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=AsNSz-1gUcMC&printsec=frontcover&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=1&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=AsNSz-1gUcMC&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/2_States.html?hl=&id=AsNSz-1gUcMC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=AsNSz-1gUcMC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Fourth book by the bestselling author Chetan Bhagat. 2 States is a story about Krish and Ananya."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "wm0fEI92y4AC",
+            "etag": "KzytGQQqxYE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/wm0fEI92y4AC",
+            "volumeInfo": {
+                "title": "One Night at the Call Center",
+                "subtitle": "A Novel",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Ballantine Books",
+                "publishedDate": "2008-12-10",
+                "description": "Press 1 for technical support. Press 2 for broken hearts. Press 3 if your life has totally crashed. . . . Six friends work nights at a call center in India, providing technical support for a major U.S. appliance corporation. Skilled in patience–and accent management–they help American consumers keep their lives running. Yet behind the headsets, everybody’s heart is on the line. Shyam (Sam to his callers) has lost his self-confidence after being dumped by the girl who just so happens to be sitting next to him. Priyanka’s domineering mother has arranged for her daughter’s upscale marriage to an Indian man in Seattle. Esha longs to be a model but discovers it’s a horizontal romp to the runway. Lost, dissatisfied Vroom has high ideals, but compromises them by talking on the phone to idiots each night. Traditional Radhika has just found out that her husband is sleeping with his secretary. And Military Uncle (nobody knows his real name) sits alone working the online chat. They all try to make it through their shifts–and maintain their sanity–under the eagle eye of a boss whose ego rivals his incompetence. But tonight is no ordinary night. Tonight is Thanksgiving in America: Appliances are going haywire, and the phones are ringing off their hooks. Then one call, from one very special caller, changes everything. Chetan Bhagat’s delicious romantic comedy takes us inside the world of the international call center, where cultural cross-wires come together with perfect pathos, hilarity, and spice. From the Trade Paperback edition.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0307489086"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780307489081"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 320,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 184,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.6.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=wm0fEI92y4AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=wm0fEI92y4AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=wm0fEI92y4AC&printsec=frontcover&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=wm0fEI92y4AC&source=gbs_api",
+                "canonicalVolumeLink": "https://market.android.com/details?id=book-wm0fEI92y4AC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 4.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 4.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=wm0fEI92y4AC&rdid=book-wm0fEI92y4AC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 4990000.0,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 4990000.0,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/One_Night_at_the_Call_Center-sample-epub.acsm?id=wm0fEI92y4AC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/One_Night_at_the_Call_Center-sample-pdf.acsm?id=wm0fEI92y4AC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=wm0fEI92y4AC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Chetan Bhagat’s delicious romantic comedy takes us inside the world of the international call center, where cultural cross-wires come together with perfect pathos, hilarity, and spice. From the Trade Paperback edition."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "eydsAQAACAAJ",
+            "etag": "MxX2LNRsMEw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/eydsAQAACAAJ",
+            "volumeInfo": {
+                "title": "One Indian Girl",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Rupa Publications India",
+                "publishedDate": "2016",
+                "description": "Hi, I'm Radhika Mehta and I'm getting married this week. I work at Goldman Sachs, an investment bank. Thank you for reading my story. However, let me warn you. You may not like me too much. One, I make a lot of money. Two, I have an opinion on everything. Three, I have had a boyfriend before. Ok, maybe two. Bestselling author Chetan Bhagat, writing for the first time in a female voice, brings to you One Indian Girl, the heart-warming story of a modern Indian girl. Now if all this was the case with a guy, one might be cool with it. But since I am a girl these three things I mentioned don't really make me too likeable, do they?--Page 4 of cover.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129142147"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129142146"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 272,
+                "printType": "BOOK",
+                "categories": [
+                    "Indian women"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 5,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=eydsAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=eydsAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=eydsAQAACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=eydsAQAACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/One_Indian_Girl.html?hl=&id=eydsAQAACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=eydsAQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "&quot;Hi, I am Radhika Mehta and I am getting married this week."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "QGXGuwAACAAJ",
+            "etag": "aqLT1a3v41c",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/QGXGuwAACAAJ",
+            "volumeInfo": {
+                "title": "One Night at the Call Centre",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Black Swan",
+                "publishedDate": "2013-08-30",
+                "description": "A comedy of romance and crossed linesSix friends are selling home appliances to the US from a call centre in India. Each one has an issue with love. Call agent Sam works right beside the girl who's just dumped him. He's dating someone he can't stand, just to get over her.Esha is just short of becoming a model. Two inches, to be precise.Vroom wants to change the world. Radikha's trying to manage her mother-in-law, and hold down her job.Tonight is Thanksgiving in America, and customers are queueing up to complain about white goods going wrong. On this night of a thousand phone calls, when life couldn't look more dismal, one unique caller gets on the line. And that call is going to change everything ...A romantic comedy of six friends kicking against the system, against their boss, and against each other. Something's got to give ...",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0552778931"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780552778930"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 320,
+                "printType": "BOOK",
+                "categories": [
+                    "Call centers"
+                ],
+                "averageRating": 4.0,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=QGXGuwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=QGXGuwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=QGXGuwAACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=QGXGuwAACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/One_Night_at_the_Call_Centre.html?hl=&id=QGXGuwAACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=QGXGuwAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "A #1 international bestseller, this provocative comedy offers a unique perspective--that of a group of friends working in a call center in India on the night God decides to call."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "05sRrgEACAAJ",
+            "etag": "tQWKmec6/8A",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/05sRrgEACAAJ",
+            "volumeInfo": {
+                "title": "Five Point Someone: What Not to Do at Iit",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Rupa Publications",
+                "publishedDate": "2014-11-01",
+                "description": "Five Point Someone is Chetan Bhagat's debut novel which revolves around the lives of Ryan, Alok, and Hari. The three lads become close friends while trying hard to survive in an exceedingly competitive environment. The three boys join IIT with a passion to excel and come out successfully as the best graduates. However, their life turns upside down when their grades fall lower than they had ever expected. Meanwhile, Hari falls in love with his professor's daughter, and Alok and Ryan cannot stop disputing each other. Five Point Someone was successfully able to strike a chord with the millions of youngsters across India. Hari, Alok and Ryan have to deal with unpleasant and cynical teachers, assignments and projects, stress of unending examinations, and a stringent academic schedule. Will they be able to survive the IITs? Or will they succumb to the tedious and age-old education system of India? Five Point Someone has been adapted into hugely successful motion pictures both in Tamil and Hindi.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129135493"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129135490"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 267,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "averageRating": 3.0,
+                "ratingsCount": 2,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=05sRrgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=05sRrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=05sRrgEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=05sRrgEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Five_Point_Someone_What_Not_to_Do_at_Iit.html?hl=&id=05sRrgEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=05sRrgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Five Point Someone is Chetan Bhagat&#39;s debut novel which revolves around the lives of Ryan, Alok, and Hari."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "gl4HQ_u0GRYC",
+            "etag": "Mt9hdoli2Vw",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/gl4HQ_u0GRYC",
+            "volumeInfo": {
+                "title": "Revolution 2020",
+                "subtitle": "LOVE.CORRUPTION.AMBITION",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Rupa Publications",
+                "publishedDate": "2012-09-25",
+                "description": "Revolution 2020 by Chetan Bhagat Yet Another Grasping Work By The Bestselling Author Once upon a time, in small-town India, there lived two intelligent boys. One wanted to use his intelligence to make money. Another wanted to use his intelligence to create a revolution. The problem was, they both loved the same girl! Welcome to Revolution 2020, an exciting story about childhood friends Gopal, Raghav and Aarti who struggle to find success, and live in Varanasi. However, it isn't easy to achieve this in an unfair society that rewards the corrupt. As Gopal gives in to the system, and Raghav fights it, who will win? Revolution 2020 from the bestselling author of Five Point Someone, One Night @ The Call Center, The Three Mistakes of My Life and 2 States, comes another gripping tale from the heartland of India. Are you ready for the revolution? About The Author Chetan Bhagat's books have remained bestsellers since their release, and few have already been adapted into major Bollywood films. Readers' and Media accolades are unending. The New York Times called him the 'the biggest selling English language novelist in India's history.' Time magazine named him in the \"100 Most Influential People in the world\" and Fast Company, USA listed him as one of the world's \"100 most creative people in business.\" Chetan Bhagat writes columns for leading English and Hindi newspapers, focusing on youth and national development issues. He is also a motivational speaker. Chetan quit his international investment banking career in 2009, to devote his entire time to writing and make change happen in the country. He lives in Mumbai with his wife Anusha, an ex-classmate from IIMA and his twin boys Shyam and Ishaan.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129121509"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129121506"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 306,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "averageRating": 2.0,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.4.0.preview.2",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=gl4HQ_u0GRYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=gl4HQ_u0GRYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=gl4HQ_u0GRYC&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=gl4HQ_u0GRYC&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Revolution_2020.html?hl=&id=gl4HQ_u0GRYC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=gl4HQ_u0GRYC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Revolution 2020 by Chetan Bhagat Yet Another Grasping Work By The Bestselling Author Once upon a time, in small-town India, there lived two intelligent boys."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "kxc6jgEACAAJ",
+            "etag": "nWzlxVyAwgA",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/kxc6jgEACAAJ",
+            "volumeInfo": {
+                "title": "Making India Awesome",
+                "subtitle": "New Essays and Columns",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Rupa Publications India",
+                "publishedDate": "2015-08",
+                "description": "Love your country? Want to make it truly great? Tired of loud debates and complex arguments which lead to no solutions? Welcome to MAKING INDIA AWESOME. Following the phenomenal success of his first non-fiction book, What Young India Wants, Chetan Bhagat, the country's biggest-selling writer, returns with another book of essays in which he analyses and provides inspired solutions to the country's most intractable problems-poverty, unemployment, corruption, violence against women, communal violence, religious fundamentalism, illiteracy and more. Using simple language and concepts, this book will enable you to understand the most complex of problems facing the nation today and give practical solutions on how you can do your part to solve them.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129137429"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129137425"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 192,
+                "printType": "BOOK",
+                "categories": [
+                    "India"
+                ],
+                "averageRating": 4.0,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=kxc6jgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=kxc6jgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=kxc6jgEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=kxc6jgEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Making_India_Awesome.html?hl=&id=kxc6jgEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=kxc6jgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Using simple language and concepts, this book will enable you to understand the most complex of problems facing the nation today and give practical solutions on how you can do your part to solve them."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "6CQjrgEACAAJ",
+            "etag": "dyyf3j3Axuc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/6CQjrgEACAAJ",
+            "volumeInfo": {
+                "title": "The 3 Mistakes of My Life (English)",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Rupa Publications",
+                "publishedDate": "2014-11-01",
+                "description": "Novel about a young boy in Ahmedabad, who opens a cricket shop.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129135515"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129135513"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 282,
+                "printType": "BOOK",
+                "categories": [
+                    "Businessmen"
+                ],
+                "averageRating": 3.0,
+                "ratingsCount": 11,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=6CQjrgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=6CQjrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=6CQjrgEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=6CQjrgEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_3_Mistakes_of_My_Life_English.html?hl=&id=6CQjrgEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=6CQjrgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Novel about a young boy in Ahmedabad, who opens a cricket shop."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "BGFgtAEACAAJ",
+            "etag": "ypMxS6sDCzI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/BGFgtAEACAAJ",
+            "volumeInfo": {
+                "title": "Half Girlfriend",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publishedDate": "2014",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "8129124025"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129124029"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 268,
+                "printType": "BOOK",
+                "categories": [
+                    "Novel"
+                ],
+                "averageRating": 5.0,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=BGFgtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=BGFgtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=BGFgtAEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=BGFgtAEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Half_Girlfriend.html?hl=&id=BGFgtAEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=BGFgtAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "bvnxrQEACAAJ",
+            "etag": "7QAZ/4u9lSc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/bvnxrQEACAAJ",
+            "volumeInfo": {
+                "title": "What Young India Wants: Selected Non - Fiction",
+                "authors": [
+                    "Chetan Bhagat"
+                ],
+                "publisher": "Rupa Publications",
+                "publishedDate": "2014-11-01",
+                "description": "What Young India Wants is the first and only work of non-fiction by the Chetan Bhagat. It is based on his vast experience as a successful writer and motivational speaker. He analyzes the complex issues and problems faced by India in the 21st century. Chetan Bhagat asks thought-provoking questions, demands answers and presents solutions for a prosperous India. Presented in simple prose and with great insight, What Young Indian Wants will be an engaging and riveting read for people of all ages.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "812913554X"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9788129135544"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 208,
+                "printType": "BOOK",
+                "categories": [
+                    "Social Science"
+                ],
+                "averageRating": 4.0,
+                "ratingsCount": 2,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=bvnxrQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=bvnxrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=bvnxrQEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=bvnxrQEACAAJ&dq=chetan+bhagat+inauthor:bhagat&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/What_Young_India_Wants_Selected_Non_Fict.html?hl=&id=bvnxrQEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=bvnxrQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "So does Chetan Bhagat, India&#39;s most loved writer, in What Young India Wants, his first book of non-fiction. What Young India Wants is based on Chetan Bhagat&#39;s vast experience as a very successful writer and motivational speaker."
+            }
+        }
+    ]
+}

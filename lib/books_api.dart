@@ -10,8 +10,13 @@ class Book {
   final String title;
   final String author;
   final String thumbnailUrl;
+  final String googleUrl;
 
-  Book({@required this.title, @required this.author, this.thumbnailUrl})
+  Book(
+      {@required this.title,
+      @required this.author,
+      this.thumbnailUrl,
+      this.googleUrl})
       : assert(title != null),
         assert(author != null);
 }
@@ -54,6 +59,7 @@ List<Book> _parseBookJson(String jsonStr) {
       title: jsonBook['volumeInfo']['title'],
       author: (jsonBook['volumeInfo']['authors'] as List).join(', '),
       thumbnailUrl: thumbnailUrl,
+      googleUrl: jsonBook['volumeInfo']['previewLink'],
     );
   }).toList();
 }
