@@ -1,38 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:book_finder/cache.dart';
 import 'package:book_finder/books_api.dart';
 
-const potterUrl =
-    'https://www.googleapis.com/books/v1/volumes?q=harry+potter+inauthor:rowling';
+class BookList extends StatelessWidget {
+  BookList(this.url);
+  final String url;
 
-const bhagatUrl =
-    'https://www.googleapis.com/books/v1/volumes?q=chetan%20bhagat+inauthor:bhagat';
-
-class BookFinderPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Book Finder'),
-        leading: Icon(Icons.book),
-      ),
-      body: FutureBuilder(
-          future: fetchCachedBooks(potterUrl),
-          builder: (context, AsyncSnapshot<List<Book>> snapshot) {
-            if (snapshot.connectionState == ConnectionState.done) {
-              if (snapshot.hasError) {
-                return Center(child: Text('Error: ${snapshot.error}'));
-              } else {
-                return ListView(
-                    children: snapshot.data.map((b) => BookTile(b)).toList());
-              }
+    return FutureBuilder(
+        future: fetchBooks(url),
+        builder: (context, AsyncSnapshot<List<Book>> snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            if (snapshot.hasError) {
+              return Center(child: Text('Error: ${snapshot.error}'));
             } else {
-              return Center(child: CircularProgressIndicator());
+              return ListView(
+                  children: snapshot.data.map((b) => BookTile(b)).toList());
             }
-          }),
-    );
+          } else {
+            return Center(child: CircularProgressIndicator());
+          }
+        });
   }
 }
 

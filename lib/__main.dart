@@ -1,25 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:book_finder/widgets.dart';
 
-const url =
-    'https://www.googleapis.com/books/v1/volumes?q=harry+potter+inauthor:rowling';
+const booksUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
+const potterQuery = '${booksUrl}harry+potter+inauthor:rowling';
+const bhagatQuery = '${booksUrl}chetan%20bhagat+inauthor:bhagat';
 
-void main() => runApp(Center(
-        child: Text(
-      'Hello World',
-      textDirection: TextDirection.ltr,
-    )));
+void main() => runApp(BookFinderApp());
 
-/*
-class MyApp extends StatelessWidget {
+class BookFinderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Book Finder',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: Scaffold(body: Center(child: Text('Hello World'))),
+      home: BookFinderPage(),
     );
   }
 }
-*/
+
+class BookFinderPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Book Finder'),
+        leading: Icon(Icons.book),
+      ),
+      body: BookList(potterQuery),
+    );
+  }
+}

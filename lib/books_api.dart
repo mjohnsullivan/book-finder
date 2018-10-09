@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:meta/meta.dart';
 
@@ -21,9 +22,15 @@ class Book {
         assert(author != null);
 }
 
+/// Fetches a list of books from an asset
+Future<List<Book>> fetchAssetBooks() async =>
+    _parseBookJson(await rootBundle.loadString('assets/config.json'));
+
+/// Fetches a list of books from a Google Books api url
 Future<List<Book>> fetchBooks(String url) async =>
     _parseBookJson(await fetchBooksJson(url));
 
+/// Fetches a json list of books from a Google Books api url
 Future<String> fetchBooksJson(String url) async {
   final res = await http.get(url);
   if (res.statusCode == 200) {
