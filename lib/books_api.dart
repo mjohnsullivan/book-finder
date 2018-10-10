@@ -1,34 +1,18 @@
 import 'dart:async';
-import 'dart:convert';
+import 'package:book_finder/book.dart';
 
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
-import 'package:meta/meta.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-class Book {
-  final String title;
-  final String author;
-  final String thumbnailUrl;
-  final String googleUrl;
-
-  Book(
-      {@required this.title,
-      @required this.author,
-      this.thumbnailUrl,
-      this.googleUrl})
-      : assert(title != null),
-        assert(author != null);
-}
-
 /// Fetches a list of books from an asset
 Future<List<Book>> fetchAssetBooks() async =>
-    _parseBookJson(await rootBundle.loadString('assets/config.json'));
+    parseBookJson(await rootBundle.loadString('assets/bhagat.json'));
 
 /// Fetches a list of books from a Google Books api url
 Future<List<Book>> fetchBooks(String url) async =>
-    _parseBookJson(await fetchBooksJson(url));
+    parseBookJson(await fetchBooksJson(url));
 
 /// Fetches a json list of books from a Google Books api url
 Future<String> fetchBooksJson(String url) async {
@@ -45,28 +29,70 @@ Future<List<Book>> fetchCachedBooks(String url) async {
   final booksStr = prefs.getString('cached_books');
   if (booksStr != null) {
     print('Cache hit');
-    return _parseBookJson(booksStr);
+    return parseBookJson(booksStr);
   } else {
     final booksStr = await fetchBooksJson(url);
     prefs.setString('cached_books', booksStr);
     print('Cache populated');
-    return _parseBookJson(booksStr);
+    return parseBookJson(booksStr);
   }
 }
 
-List<Book> _parseBookJson(String jsonStr) {
-  final jsonMap = json.decode(jsonStr);
-  final jsonList = (jsonMap['items'] as List);
-  return jsonList.map((jsonBook) {
-    final thumbnailUrl = (jsonBook['volumeInfo'].containsKey('imageLinks') &&
-            jsonBook['volumeInfo']['imageLinks'].containsKey('smallThumbnail'))
-        ? jsonBook['volumeInfo']['imageLinks']['smallThumbnail']
-        : null;
-    return Book(
-      title: jsonBook['volumeInfo']['title'],
-      author: (jsonBook['volumeInfo']['authors'] as List).join(', '),
-      thumbnailUrl: thumbnailUrl,
-      googleUrl: jsonBook['volumeInfo']['previewLink'],
-    );
-  }).toList();
-}
+final hardCodedBooks = [
+  Book(
+    title: 'Harry Potter and the Philosopher\'s Stone',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=x4beDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=x4beDQAAQBAJ&printsec=frontcover&dq=harry+potter+inauthor:rowling&hl=&cd=3&source=gbs_api',
+  ),
+  Book(
+    title: 'Harry Potter and the Chamber of Secrets',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=7Z_eDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=7Z_eDQAAQBAJ&printsec=frontcover&dq=harry+potter+inauthor:rowling&hl=&cd=8&source=gbs_api',
+  ),
+  Book(
+    title: 'Harry Potter and the Prisoner of Azkaban',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=y6DeDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=y6DeDQAAQBAJ&printsec=frontcover&dq=harry+potter+inauthor:rowling&hl=&cd=6&source=gbs_api',
+  ),
+  Book(
+    title: 'Harry Potter and the Goblet of Fire',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=N6DeDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=Q6TeDQAAQBAJ&printsec=frontcover&dq=harry+potter+inauthor:rowling&hl=&cd=5&source=gbs_api',
+  ),
+  Book(
+    title: 'Harry Potter and the Order of the Phoenix',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=FmwwDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=FmwwDQAAQBAJ&printsec=frontcover&dq=order+inauthor:rowling&hl=&cd=1&source=gbs_api',
+  ),
+  Book(
+    title: 'Harry Potter and the Half-Blood Prince',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=yofeDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=yofeDQAAQBAJ&printsec=frontcover&dq=harry+potter+inauthor:rowling&hl=&cd=9&source=gbs_api',
+  ),
+  Book(
+    title: 'Harry Potter and the Deathly Hallows',
+    author: 'JK Rowling',
+    thumbnailUrl:
+        'http://books.google.com/books/content?id=N6DeDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+    googleUrl:
+        'http://books.google.co.uk/books?id=N6DeDQAAQBAJ&printsec=frontcover&dq=harry+potter+inauthor:rowling&hl=&cd=4&source=gbs_api',
+  ),
+];

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'package:book_finder/book.dart';
 import 'package:book_finder/books_api.dart';
 
 class BookList extends StatelessWidget {

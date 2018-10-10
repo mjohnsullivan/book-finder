@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:book_finder/widgets.dart';
 
-const booksUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
-const potterQuery = '${booksUrl}harry+potter+inauthor:rowling';
+const booksUrl = 'https://www.googleapis.com/books/v1/volumes?maxResults=20&q=';
+const potterQuery = '${booksUrl}intitle:harry+potter+inauthor:rowling';
 const bhagatQuery = '${booksUrl}chetan%20bhagat+inauthor:bhagat';
+const banksQuery = '${booksUrl}iain%20banks+inauthor:iain%20m%20banks';
 
 void main() => runApp(BookFinderApp());
 
