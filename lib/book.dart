@@ -25,7 +25,7 @@ List<Book> parseBookJson(String jsonStr) {
   return jsonList.map((jsonBook) {
     final thumbnailUrl = (jsonBook['volumeInfo'].containsKey('imageLinks') &&
             jsonBook['volumeInfo']['imageLinks'].containsKey('smallThumbnail'))
-        ? jsonBook['volumeInfo']['imageLinks']['smallThumbnail']
+        ? jsonBook['volumeInfo']['imageLinks']['thumbnail']
         : null;
     final book = Book(
       title: jsonBook['volumeInfo']['title'],
@@ -33,7 +33,6 @@ List<Book> parseBookJson(String jsonStr) {
       thumbnailUrl: thumbnailUrl,
       googleUrl: jsonBook['volumeInfo']['previewLink'],
     );
-    print(book);
     return book;
   }).toList();
 }
