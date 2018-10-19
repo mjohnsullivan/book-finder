@@ -16,7 +16,8 @@ class Book {
         assert(author != null);
 
   String toString() =>
-      'title: $title\nAuthor:$author\nThumbnail:$thumbnailUrl\nurl:$googleUrl';
+      'title: $title\nAuthor:$author\n' +
+      'Thumbnail:$thumbnailUrl\nurl:$googleUrl';
 }
 
 List<Book> parseBookJson(String jsonStr) {

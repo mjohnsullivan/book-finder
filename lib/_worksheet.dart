@@ -1,6 +1,7 @@
 import 'package:book_finder/book.dart';
 import 'package:book_finder/books_api.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 const booksUrl = 'https://www.googleapis.com/books/v1/volumes?maxResults=20&q=';
 const potterQuery = '${booksUrl}intitle:harry+potter+inauthor:rowling';
@@ -30,23 +31,28 @@ class BookFinderPage extends StatelessWidget {
         title: Text('Book Finder'),
         leading: Icon(Icons.book),
       ),
-      body: MyBookList(), //BookList(potterQuery),
+      body: MyBookList(banksQuery), //BookList(potterQuery),
     );
   }
 }
 
 class MyBookList extends StatelessWidget {
+  MyBookList(this.url);
+  final String url;
+
   @override
   Widget build(BuildContext context) {
-    final futureBookList = fetchBooks(banksQuery);
+    final bookList = fetchBooks(url);
     return FutureBuilder(
-        future: futureBookList,
+        future: bookList,
         builder: (context, AsyncSnapshot<List<Book>> snapshot) {
-          if (snapshot.hasData)
+          if (snapshot.hasData) {
             return ListView(
-                children: snapshot.data.map((b) => BookTile(b)).toList());
-          else
+              children: snapshot.data.map((b) => BookTile(b)).toList(),
+            );
+          } else {
             return Center(child: CircularProgressIndicator());
+          }
         });
   }
 }
@@ -63,9 +69,22 @@ class BookTile extends StatelessWidget {
       leading: CircleAvatar(
         backgroundImage:
             book.thumbnailUrl != null ? NetworkImage(book.thumbnailUrl) : null,
+        child: book.thumbnailUrl == null ? Text(book.title[0]) : null,
       ),
-      trailing: IconButton(icon: Icon(Icons.book), onPressed: () {}),
+      trailing: IconButton(
+        icon: Icon(Icons.book),
+        onPressed: () => _navigateToUrl(book.googleUrl, context),
+      ),
     );
+  }
+
+  void _navigateToUrl(String url, BuildContext context) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      Scaffold.of(context)
+          .showSnackBar(SnackBar(content: Text('Unable to launch URL')));
+    }
   }
 }
 
