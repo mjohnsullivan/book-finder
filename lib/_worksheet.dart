@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:book_finder/data/book.dart';
 import 'package:book_finder/data/books_api.dart';
 import 'package:flutter/material.dart';
@@ -88,51 +90,98 @@ class BookTile extends StatelessWidget {
   }
 }
 
-class BookDetailsOverlay extends StatelessWidget {
-  BookDetailsOverlay(this.book);
+class MyBookDetailsPage extends StatelessWidget {
+  MyBookDetailsPage(this.book);
   final Book book;
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Positioned.fill(
+    return Scaffold(
+      appBar: AppBar(title: Text(book.title)),
+      body: StackedBookDetails(book),
+    );
+  }
+}
+
+class StackedBookDetails extends StatelessWidget {
+  StackedBookDetails(this.book);
+  final Book book;
+  @override
+  Widget build(BuildContext context) {
+    return Stack(children: <Widget>[
+      Positioned.fill(
           child: Image.network(
-            book.thumbnailUrl,
-            fit: BoxFit.fill,
+        book.thumbnailUrl,
+        fit: BoxFit.fill,
+      )),
+      BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
+        child: Container(
+          decoration: BoxDecoration(color: Colors.black54),
+        ),
+      ),
+      FractionalTranslation(
+        translation: const Offset(1.0, 1.0),
+        child: Image.network(book.thumbnailUrl),
+      ),
+      Positioned(
+        top: 10.0,
+        left: 10.0,
+        child: Container(
+          width: 300.0,
+          decoration: BoxDecoration(
+            color: Colors.black54,
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          child: Text(
+            book.title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24.0,
+            ),
           ),
         ),
-        Positioned(
-          top: 30.0,
-          left: 30.0,
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.black45,
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            width: 250.0,
-            child: Text(
-              book.title,
-              maxLines: 2,
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(
+      ),
+      Positioned(
+          bottom: 10.0,
+          right: 100.0,
+          child: Text(
+            book.author,
+            style: TextStyle(
                 color: Colors.white,
                 fontSize: 24.0,
-              ),
+                fontWeight: FontWeight.w700),
+          )),
+    ]);
+  }
+}
+
+class BookDetails extends StatelessWidget {
+  BookDetails(this.book);
+  final Book book;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(top: 10.0),
+              child: Image.network(book.thumbnailUrl),
             ),
-          ),
-        ),
-        Positioned(
-          bottom: 50.0,
-          right: 30.0,
-          child: Text(book.author,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24.0,
-              )),
-        ),
-      ],
+            Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+              child: Text(book.title),
+            ),
+            SizedBox(height: 25.0),
+            Text(
+              book.author,
+              style: TextStyle(fontWeight: FontWeight.w700),
+            ),
+          ]),
     );
   }
 }

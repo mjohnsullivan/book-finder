@@ -25,12 +25,6 @@ class BookFinderPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*
-      appBar: AppBar(
-        title: Text('Book Finder'),
-        leading: Icon(Icons.book),
-      ),
-      */
       backgroundColor: Colors.green,
       body: SafeArea(child: BookListPage(potterQuery)),
     );
