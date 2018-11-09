@@ -29,12 +29,6 @@ class BookTile extends StatelessWidget {
   }
 }
 
-void _navigateToDetailsPage(Book book, BuildContext context) {
-  Navigator.of(context).push(MaterialPageRoute(
-    builder: (context) => BookDetailsPage(book),
-  ));
-}
-
 void _navigateToUrl(String url, BuildContext context) async {
   if (await canLaunch(url)) {
     await launch(url);
@@ -43,4 +37,10 @@ void _navigateToUrl(String url, BuildContext context) async {
       content: Text('Unable to Launch URL'),
     ));
   }
+}
+
+void _navigateToDetailsPage(Book book, BuildContext context) {
+  Navigator.of(context).push(MaterialPageRoute(
+    builder: (context) => BookDetailsPage(book),
+  ));
 }
