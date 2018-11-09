@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:book_finder/book.dart';
+import 'package:book_finder/data/book.dart';
 
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;

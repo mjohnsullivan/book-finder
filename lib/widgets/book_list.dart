@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:book_finder/widgets/book_tile.dart';
-import 'package:book_finder/book.dart';
+import 'package:book_finder/data/book.dart';
 
 class BookListWithAppBar extends StatelessWidget {
   BookListWithAppBar(this.books);

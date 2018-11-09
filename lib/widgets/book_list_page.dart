@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:book_finder/widgets/book_list.dart';
-import 'package:book_finder/book.dart';
-import 'package:book_finder/books_api.dart';
+import 'package:book_finder/data/book.dart';
+import 'package:book_finder/data/books_api.dart';
 
 class BookListPage extends StatelessWidget {
   BookListPage(this.url);

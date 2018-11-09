@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:book_finder/book.dart';
+import 'package:book_finder/data/book.dart';
 import 'package:book_finder/widgets/book_details_page.dart';
 
 import 'package:url_launcher/url_launcher.dart';
