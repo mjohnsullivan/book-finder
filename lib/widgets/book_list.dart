@@ -15,6 +15,14 @@ class BookListWithAppBar extends StatelessWidget {
           SliverAppBar(
             title: Text('Book Finder'),
             backgroundColor: Colors.green,
+            forceElevated: true,
+            floating: true,
+            actions: [
+              IconButton(
+                icon: Icon(Icons.search),
+                onPressed: () {},
+              )
+            ],
           ),
           SliverList(
             delegate: SliverChildListDelegate(
